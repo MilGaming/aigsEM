@@ -1,5 +1,7 @@
 # imports
 from __future__ import annotations
+#from pty import CHILD
+import re
 import numpy as np
 import aigs
 from aigs import State, Env
@@ -25,35 +27,94 @@ def minimax(state: State, maxim: bool) -> int:
 def alpha_beta(state: State, maxim: bool, alpha: int, beta: int) -> int:
     raise NotImplementedError  # you do this
 
-
 @dataclass
 class Node:
-    state: State  # Add more fields
+    def __init__(self, state,parent=None,action=None):
+        self.state = state
+        self.parent = parent
+        self.children = {}
+        self.untried_actions = []
+        self.n = 0
+        self.q = 0.0
+        self.action = action
+
+    
+
 
 
 # Intuitive but difficult in terms of code
 def monte_carlo(state: State, cfg) -> int:
-    raise NotImplementedError  # you do this
+    root = Node(state)
+    root.untried_actions = list(np.where(state.legal)[0])
+
+
+    for _ in range(cfg.compute):
+        node = tree_policy(root, cfg)
+        delta = default_policy(node.state)
+        backup(node, delta)
+
+    #after run best child
+    best = best_child(root, cfg.c)
+    return best.action
+    
+    
+    #raise NotImplementedError  # you do this
 
 
 def tree_policy(node: Node, cfg) -> Node:
-    raise NotImplementedError  # you do this
+    while not node.state.ended:
+        if node.untried_actions:
+            return expand(node)
+        else:
+            node = best_child(node, cfg.c)
+    return node
+
+    #raise NotImplementedError  # you do this
 
 
 def expand(v: Node) -> Node:
-    raise NotImplementedError  # you do this
+
+    action = v.untried_actions.pop()
+    next_state = env.step(v.state, action)
+    
+    child = Node(next_state, parent=v, action=action)
+    child.untried_actions = list(np.where(next_state.legal)[0])
+    v.children[action] = child
+
+    return child
+
+    #raise NotImplementedError  # you do this
 
 
 def best_child(root: Node, c) -> Node:
-    raise NotImplementedError  # you do this
+
+    weight = [(child.q / child.n) + c * np.sqrt((2 * np.log(root.n)) / child.n) for child in root.children.values()]
+    return list(root.children.values())[np.argmax(weight)]
+
+    #raise NotImplementedError  # you do this
 
 
 def default_policy(state: State) -> int:
-    raise NotImplementedError  # you do this
+
+    while not state.ended:
+        actions = np.where(state.legal)[0]
+        if len(actions) == 0:
+            break
+        action = np.random.choice(actions).item()
+        state = env.step(state, action)
+    return state.point
+
+    #raise NotImplementedError  # you do this
 
 
 def backup(node, delta) -> None:
-    raise NotImplementedError  # you do this
+
+    while node is not None:
+        node.n += 1
+        node.q += delta
+        node = node.parent
+
+    #raise NotImplementedError  # you do this
 
 
 # Main function
@@ -82,7 +143,8 @@ def main(cfg) -> None:
                 a = actions[np.argmax(values) if state.maxim else np.argmin(values)]
 
             case "monte_carlo":
-                raise NotImplementedError
+                a = monte_carlo(state, cfg)
+                #raise NotImplementedError
 
             case _:
                 raise ValueError(f"Unknown player {state.player}")

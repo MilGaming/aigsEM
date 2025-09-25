@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\asus\\Desktop\\Ai\\aigs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus\\Desktop\\Ai\\aigs\\labs\\mcts.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:labs\\mcts.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus\\Desktop\\Ai\\aigs\\labs\\qd.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:labs\\qd.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus\\Desktop\\Ai\\aigs\\aigs\\games.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:aigs\\games.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus\\Desktop\\Ai\\aigs\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus\\Desktop\\Ai\\aigs\\aigs\\utils.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:aigs\\utils.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\asus\\Desktop\\Ai\\aigs\\conf\\config.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -26,58 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "main.py",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Ai\\aigs\\main.py",
-              "RelativeDocumentMoniker": "main.py",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Ai\\aigs\\main.py",
-              "RelativeToolTip": "main.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "utils.py",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Ai\\aigs\\aigs\\utils.py",
+              "RelativeDocumentMoniker": "aigs\\utils.py",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Ai\\aigs\\aigs\\utils.py",
+              "RelativeToolTip": "aigs\\utils.py",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-09-02T15:45:35.376Z",
+              "WhenOpened": "2025-09-23T17:21:57.111Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "config.yaml",
               "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Ai\\aigs\\conf\\config.yaml",
               "RelativeDocumentMoniker": "conf\\config.yaml",
               "ToolTip": "C:\\Users\\asus\\Desktop\\Ai\\aigs\\conf\\config.yaml",
               "RelativeToolTip": "conf\\config.yaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-09-02T14:43:14.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "games.py",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Ai\\aigs\\aigs\\games.py",
-              "RelativeDocumentMoniker": "aigs\\games.py",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Ai\\aigs\\aigs\\games.py",
-              "RelativeToolTip": "aigs\\games.py",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAACwAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-09-02T14:36:27.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T13:52:57.125Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "mcts.py",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Ai\\aigs\\labs\\mcts.py",
-              "RelativeDocumentMoniker": "labs\\mcts.py",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\Ai\\aigs\\labs\\mcts.py",
-              "RelativeToolTip": "labs\\mcts.py",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAG8AAAAbAAAAAAAAAA==",
+              "Title": "qd.py",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\Ai\\aigs\\labs\\qd.py",
+              "RelativeDocumentMoniker": "labs\\qd.py",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\Ai\\aigs\\labs\\qd.py",
+              "RelativeToolTip": "labs\\qd.py",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAMkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-09-02T12:58:06.943Z",
+              "WhenOpened": "2025-09-23T13:33:25.85Z",
               "EditorCaption": ""
             }
           ]

@@ -3,9 +3,8 @@
     "",
     "\\aigs",
     "\\conf",
-    "\\docs",
     "\\labs"
   ],
-  "SelectedNode": "\\main.py",
+  "SelectedNode": "\\labs\\qd.py",
   "PreviewInSolutionExplorer": false
 }
